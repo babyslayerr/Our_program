@@ -33,6 +33,17 @@
         width: 300px;
         padding: 10px;
       }
+      .game_imformation {
+        display: flex;
+        justify-content: center;
+      }
+      .game_imformation > div:first-child {
+        margin-right: 20px;
+      }
+      .button_wrap {
+        display: flex;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
@@ -43,6 +54,13 @@
         <div class="content-input">
           <input type="text" />
         </div>
+        <div class="game_imformation">
+          <div>남은시간: <span class="time">0</span>초</div>
+          <div>획득점수: <span class="score">0</span>점</div>
+        </div>
+      </div>
+      <div class="button_wrap">
+        <button class="button_loading">게임을 불러오는중...</button>
       </div>
     </div>
   </body>
